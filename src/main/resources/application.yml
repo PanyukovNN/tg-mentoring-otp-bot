@@ -5,7 +5,7 @@ server:
 spring:
   kafka:
     bootstrap-servers:
-      - localhost:29092
+      - host.docker.internal:29092
     producer:
       acks: all
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
