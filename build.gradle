@@ -26,3 +26,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 }
+
+bootJar {
+    archiveFileName = "tg-mentoring-otp-bot.jar"
+}

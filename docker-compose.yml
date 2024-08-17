@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  reminder:
+    build: .
+    container_name: tg-mentoring-otp-bot
+    ports:
+      - "172.17.0.1:8008:8008" # host.docker.internal
+      - "127.0.0.1:8008:8008"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file:
+      - deploy/config.env
+      - ~/common-config/config.env
